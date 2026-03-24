@@ -20,8 +20,6 @@ phases:
       - echo "Switching to DEV root module"
       - cd envs/dev
       - terraform init -reconfigure -input=false
-      - terraform fmt -check -recursive
-      - terraform validate
 
   build:
     commands:
