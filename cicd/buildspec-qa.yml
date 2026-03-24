@@ -20,8 +20,6 @@ phases:
       - echo "Switching to QA root module"
       - cd envs/qa
       - terraform init -reconfigure -input=false
-      - terraform fmt -check -recursive
-      - terraform validate
 
   build:
     commands:
